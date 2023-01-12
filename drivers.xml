@@ -411,6 +411,10 @@
             <driver name="Rotator Simulator">indi_simulator_rotator</driver>
             <version>1.0</version>
         </device>
+	<device label="Sunshine Rotator" manufacturer="Sunshine">
+          <driver name="Sunshine Rotator">indi_sunshine_rotator</driver>
+          <version>1.0</version>
+        </device>
         <device label="Microtouch" manufacturer="Starizona">
             <driver name="Microtouch">indi_microtouch_focus</driver>
             <version>0.1</version>

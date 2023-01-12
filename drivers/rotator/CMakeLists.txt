@@ -77,3 +77,15 @@ SET(deepskydad_fr1_SRC
 add_executable(indi_deepskydad_fr1 ${deepskydad_fr1_SRC})
 target_link_libraries(indi_deepskydad_fr1 indidriver)
 install(TARGETS indi_deepskydad_fr1 RUNTIME DESTINATION bin)
+
+# ############### Sunshine Rotator ########
+SET(sunshine_SRC
+    sunshine.cpp)
+
+IF(UNITY_BUILD)
+    ENABLE_UNITY_BUILD(sunshine sunshine_SRC 10 cpp)
+ENDIF()
+
+add_executable(indi_sunshine_rotator ${sunshine_SRC})
+target_link_libraries(indi_sunshine_rotator indidriver)
+install(TARGETS indi_sunshine_rotator RUNTIME DESTINATION bin)
